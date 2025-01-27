@@ -1,3 +1,11 @@
 /* 
     General Styles
 */
+
+body{
+    background-color: cadetblue;
+}
+
+#caja-contacto{
+    background-color: lightgreen;
+}
