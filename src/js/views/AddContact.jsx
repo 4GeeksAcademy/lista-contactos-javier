@@ -7,7 +7,7 @@ const AddContact = () => {
 
     const { store, actions } = useContext(Context)
     let navigate = useNavigate();
-    const { id } = useParams(); //se obtine el id colocado en el layout
+    const { id } = useParams();
 
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");

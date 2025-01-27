@@ -1,7 +1,7 @@
-const getState = ({ getStore, getActions, setStore }) => { // setStore updates the store
+const getState = ({ getStore, getActions, setStore }) => { 
     return {
         store: {
-            listContacts: [] // creates a space where the data obtained from the API will be stored according to the GET methods, etc.
+            listContacts: [] 
         },
         actions: {
             createUser: () => {
@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => { // setStore updates t
                         if (data) {
                             setStore({ listContacts: data.contacts })
                         }
-                    }) // store is an object, and I want to target the contacts state and assign it the value of data.contacts
+                    }) 
                     .catch((error => console.log(error)))
             },
 
@@ -56,7 +56,7 @@ const getState = ({ getStore, getActions, setStore }) => { // setStore updates t
                     .then((data) => {
                         console.log(data);
                         const actions = getActions(); 
-                        actions.addContactToList(data); // Adds the contact to the state
+                        actions.addContactToList(data);
                         console.log("Contact added:", data);
                     })
                     .catch((error) => console.log(error));
