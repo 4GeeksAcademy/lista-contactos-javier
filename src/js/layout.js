@@ -17,7 +17,6 @@ const Layout = () => {
 		<div>
 			<BrowserRouter basename={basename}>
 				<Routes>
-					{/* <Route path="/" element={<Home />} /> */}
 					<Route path="/" element={<Contacts />} />
 					<Route path="/addContact" element={<AddContact />} />
 					<Route path="/editContact/:id" element={<AddContact />} />
